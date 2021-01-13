@@ -38,11 +38,16 @@
     "@cody-greene/eslint-config": "3.3.1",
     "autoprefixer": "^7.1.6",
     "jsdom": "^11.0.3",
-    "mocha": "^4.0.1",
+    "mocha": "^8.2.1",
     "postcss": "^6.0.13"
   },
   "dependencies": {
+    "sass": "^1.32.4",
+    "resolve": "^1.19.0"
+  },
+  "comment": {
     "node-sass": "^4.5.3",
+    "sass": "^1.32.4",
     "resolve": "^1.1.6"
   }
 }
