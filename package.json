@@ -44,10 +44,5 @@
   "dependencies": {
     "sass": "^1.32.4",
     "resolve": "^1.19.0"
-  },
-  "comment": {
-    "node-sass": "^4.5.3",
-    "sass": "^1.32.4",
-    "resolve": "^1.1.6"
   }
 }
