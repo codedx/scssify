@@ -52,8 +52,6 @@ browserify('entry.js')
 
     // Pass options to the compiler, check the node-sass project for more details
     sass: {
-      // See the relevant node-sass documentation
-      importer: 'custom-importers.js',
 
       // This will let the importer state be reset if scssify
       // is called several times within the same process, e.g. by factor-bundle
@@ -89,7 +87,6 @@ Example config using `package.json`:
       ["scssify", {
         "sass": {
           "outputStyle": "compressed",
-          "importerFactory": "custom-importers.js",
           "includePaths": ["node_modules", "bower_components"]
         }
       }],

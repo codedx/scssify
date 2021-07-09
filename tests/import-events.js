@@ -2,6 +2,7 @@
 /* eslint-env mocha */
 const assert = require('assert')
 const fs = require('fs')
+const path = require('path')
 const scssify = require('../lib')
 
 it('emits "file" events for @imports', function (done) {
@@ -12,7 +13,7 @@ it('emits "file" events for @imports', function (done) {
   .pipe(scssify(entry, {_flags: {}}))
   .on('error', done)
   .on('file', function (imported) {
-    assert.equal(imported, expectedImport)
+    assert.equal(path.normalize(imported), path.normalize(expectedImport))
   })
   .on('end', done)
   .resume()
